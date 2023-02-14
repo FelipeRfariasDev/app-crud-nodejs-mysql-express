@@ -14,7 +14,3 @@ $ npm run dev
 
 
 ![alt text](https://github.com/FelipeRfariasDev/app-crud-nodejs-mysql-express/blob/main/img/OlaMundoLocalhost_PORT_3000.PNG?raw=true)
-
-### 
-
-![alt text](https://github.com/FelipeRfariasDev/app-crud-nodejs-mysql-express/blob/main/img/npm_run_dev_nodemon_server.js.PNG?raw=true)
