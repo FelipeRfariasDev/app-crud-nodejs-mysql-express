@@ -21,7 +21,7 @@
 		{
 			"name": "Listar Posts Por Id",
 			"request": {
-				"url": "http://localhost:3000/posts/3",
+				"url": "http://localhost:3000/posts/1",
 				"method": "GET",
 				"header": [],
 				"body": {},
@@ -54,7 +54,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\":4,\n\t\"titulo\":\"Titulo Post 4\",\n\t\"descricao\":\"Descrição Post 4\"\n}"
+					"raw": "{\n\t\"id\":1,\n\t\"titulo\":\"Titulo Post 1\",\n\t\"descricao\":\"Descrição Post 1\"\n}"
 				},
 				"description": ""
 			},
