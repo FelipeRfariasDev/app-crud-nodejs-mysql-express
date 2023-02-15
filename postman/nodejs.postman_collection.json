@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "nodejs",
+		"_postman_id": "4018a345-b9c1-9995-f3b5-2975f67ef034",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Posts",
+			"request": {
+				"url": "http://localhost:3000/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Posts Por Id",
+			"request": {
+				"url": "http://localhost:3000/posts/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post Id",
+			"request": {
+				"url": "http://localhost:3000/posts/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Posts",
+			"request": {
+				"url": "http://localhost:3000/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":4,\n\t\"titulo\":\"Titulo Post 4\",\n\t\"descricao\":\"Descrição Post 4\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Post Id",
+			"request": {
+				"url": "http://localhost:3000/posts/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\":\"Titulo1 alterado\",\n\t\"descricao\":\"Descrição 1 alterado\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
