@@ -25,3 +25,5 @@ $ npm install nodemon -D
 ## Agora no arquivo package.json na linha 8 o arquivo server.js está sendo executado pelo nodemon conforme a imagem a baixo
 
 ![alt text](https://github.com/FelipeRfariasDev/app-crud-nodejs-mysql-express/blob/main/img/npm_run_dev_nodemon_server.js.PNG?raw=true)
+
+## **Exemplo de Api Crud simples em node e mysql que até o momento estou utilizando o express e nodemon e mysql como dependência no package.json**
