@@ -1,9 +1,17 @@
-const PORT = 3000
-
 const express = require('express')
 const cors = require('cors')
 const mysql = require('mysql')
 const app = express()
+
+require('dotenv').config()
+
+const PORT = process.env.PORT
+const DB_HOST = process.env.DB_HOST
+const DB_PORT = process.env.DB_PORT
+const DB_DATABASE = process.env.DB_DATABASE
+const DB_USERNAME = process.env.DB_USERNAME
+const DB_PASSWORD = process.env.DB_PASSWORD
+
 
 app.use(cors())
 app.use(express.json())
@@ -86,11 +94,11 @@ async function getFindId(id) {
 }
 
 const conexao = mysql.createConnection({
-  host: 'localhost',
-  port: 3306,
-  user: 'root',
-  password: 'Dprnss01@',
-  database: 'api_node'
+  host: DB_HOST,
+  port: DB_PORT,
+  user: DB_USERNAME,
+  password: DB_PASSWORD,
+  database: DB_DATABASE
 })
 
 const conn = (sql, valores='', mensagemRejeicao) => {
